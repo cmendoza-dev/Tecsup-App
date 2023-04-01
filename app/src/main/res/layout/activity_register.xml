@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -21,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/white"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             />
 
 
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/white"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             />
 
 
@@ -64,10 +65,9 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/planets_spinner"
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:spinnerMode="dropdown"
         android:layout_marginTop="15dp"
         />
 
@@ -77,9 +77,6 @@
         android:layout_height="60dp"
         android:textColorHint="@color/verde_83"
         android:layout_marginTop="15dp"
-        android:passwordToggleEnabled = "true"
-        android:passwordToggleTint="@color/login_vista"
-        android:passwordToggleDrawable="@drawable/eye"
         android:hint="@string/login_contrasena">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -96,10 +93,8 @@
         android:layout_height="60dp"
         android:textColorHint="@color/verde_83"
         android:layout_marginTop="15dp"
-        android:passwordToggleEnabled = "true"
-        android:passwordToggleTint="@color/login_vista"
-        android:passwordToggleDrawable="@drawable/eye"
         android:hint="@string/login_repetircontrasena">
+      >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -125,7 +120,9 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/azul_620"
         android:layout_marginTop="35dp"
-        tools:ignore="DuplicateIds,MissingConstraints" />
+        />
+
+
 
 
 </LinearLayout>

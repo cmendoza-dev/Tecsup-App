@@ -5,11 +5,13 @@
     <string name="login_repetircontrasena">Repetir contraseña</string>
     <string name="login_ingresar">INGRESAR</string>
     <string name="login_registrar">REGISTRAR</string>
-    <resources>
-        <string-array name="spinner_options">
-            <item>Estudiante</item>
-            <item>Opción 2</item>
-            <item>Opción 3</item>
-        </string-array>
-    </resources>
+
+    <string-array name="cargos">
+        <item>Estudiante</item>
+        <item>Docente</item>
+        <item>Administrador</item>
+        <item>Director</item>
+        <item>Coordinador</item>
+        <item>Asistente</item>
+    </string-array>
 </resources>

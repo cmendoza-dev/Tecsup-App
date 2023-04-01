@@ -12,8 +12,8 @@
     >
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
         android:src="@drawable/logo"
 
 
@@ -39,9 +39,9 @@
         android:layout_height="60dp"
         android:textColorHint="@color/verde_83"
         android:layout_marginTop="20dp"
-        android:passwordToggleEnabled = "true"
-        android:passwordToggleTint="@color/purple_640"
-        android:passwordToggleDrawable="@drawable/eye"
+
+
+
         android:hint="@string/login_contrasena">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -54,21 +54,21 @@
     </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnBotonSimple"
+            android:id="@+id/btnIngresar"
             android:text="@string/login_ingresar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/azul_620"
             android:layout_marginTop="40dp"
-            tools:ignore="MissingConstraints" />
+             />
 
         <Button
-            android:id="@+id/btnBoton"
+            android:id="@+id/btnRegistrar"
             android:text="@string/login_registrar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/verde_187"
-            tools:ignore="DuplicateIds,MissingConstraints" />
+             />
 
 </LinearLayout>
 
