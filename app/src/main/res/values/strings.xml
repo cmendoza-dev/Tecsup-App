@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tecsup App</string>
+    <string name="login_correo">Correo</string>
+    <string name="login_contrasena">Contraseña</string>
+    <string name="login_repetircontrasena">Repetir contraseña</string>
+    <string name="login_ingresar">INGRESAR</string>
+    <string name="login_registrar">REGISTRAR</string>
+    <resources>
+        <string-array name="spinner_options">
+            <item>Estudiante</item>
+            <item>Opción 2</item>
+            <item>Opción 3</item>
+        </string-array>
+    </resources>
+</resources>
