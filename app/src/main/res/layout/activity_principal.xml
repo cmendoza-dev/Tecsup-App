@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/user"
+
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#00abfb"
+        android:text="NOTICIAS TECSUP"
+
+        />
+
+    <Button
+        android:id="@+id/btnRegCurso"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/azul_620"
+        android:text="REGISTRAR CURSO"
+
+        />
+
+    <Button
+        android:id="@+id/btnRegDocente"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/azul_620"
+        android:text="REGISTRAR DOCENTE"
+
+        />
+
+    <Button
+        android:id="@+id/btnRegEstudiante"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#e0e0e0"
+        android:text="REGISTRAR ESTUDIANTE"
+
+        />
+
+    <Button
+        android:id="@+id/btnRegNotas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#e0e0e0"
+        android:text="REGISTRAR NOTAS" />
+
+    <ImageView
+        android:id="@+id/imageView_chat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/chat"
+
+        />
+
+</LinearLayout>

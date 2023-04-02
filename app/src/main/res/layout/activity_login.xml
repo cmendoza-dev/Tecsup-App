@@ -14,12 +14,10 @@
     >
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="175dp"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
         android:src="@drawable/logo"
-
-
-    />
+        />
 
     <com.google.android.material.textfield.TextInputLayout
     android:layout_width="match_parent"
