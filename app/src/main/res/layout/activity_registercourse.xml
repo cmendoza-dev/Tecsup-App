@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
 
     >
 
@@ -17,7 +19,158 @@
         android:text="Registro de Cursos"
         android:layout_marginTop="20dp"
         android:gravity="center"
-
-
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:hint="Código"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="11dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="135dp"
+            android:layout_height="60dp"
+
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="11dp"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:hint="Nombre Curso"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="11dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="11dp"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:hint="DNI"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="135dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="11dp"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:hint="Profesor"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="15dp"
+            android:layout_marginStart="11dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Carrera"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/anios"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <CheckBox android:id="@+id/checkbox_meat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Curso Activo"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btnRegistrarcurso"
+            android:text="@string/login_registrar"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/azul_620"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:text="Limpiar"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_86"
+            android:layout_marginStart="16dp"
+
+            />
+
+    </LinearLayout>
+
+
 </LinearLayout>

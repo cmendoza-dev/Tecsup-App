@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
+
 
     >
 
@@ -39,9 +41,8 @@
         android:layout_height="60dp"
         android:textColorHint="@color/verde_83"
         android:layout_marginTop="20dp"
-
-
-
+        app:passwordToggleTint="@color/purple_700"
+        app:passwordToggleEnabled="true"
         android:hint="@string/login_contrasena">
 
         <com.google.android.material.textfield.TextInputEditText
