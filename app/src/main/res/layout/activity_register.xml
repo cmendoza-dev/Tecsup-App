@@ -67,11 +67,21 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/cargos"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="15dp"
+        android:entries="@array/cargos"
+        android:padding="5dp"
+        android:layout_gravity="top"
         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/carreras"
+        android:background="@android:drawable/divider_horizontal_bright" />
+
 
 
     <com.google.android.material.textfield.TextInputLayout

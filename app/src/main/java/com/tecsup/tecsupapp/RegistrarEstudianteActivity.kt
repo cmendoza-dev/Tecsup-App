@@ -1,24 +1,17 @@
 package com.tecsup.tecsupapp
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
-class RegisterActivity : AppCompatActivity(){
-
-    lateinit var opciones:Spinner
-
+class RegistrarEstudianteActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_registrar_estudiante)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = getString(R.string.tituloRegistroUsuario)
+        supportActionBar?.title = getString(R.string.tituloGestionEstudiante)
         val drawable = resources.getDrawable(R.color.purple_640)
         supportActionBar?.setBackgroundDrawable(drawable)
+
     }
 }
