@@ -26,6 +26,8 @@
         <activity android:name=".PrincipalActivity"/>
         <activity android:name=".Registercourse"/>
         <activity android:name=".CursoActivity"/>
+        <activity android:name=".InfoCursoActivity"/>
+        <activity android:name=".RegistrarEstudianteActivity"/>
 
     </application>
 

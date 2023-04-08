@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Registro de Estudiantes"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/dni"
+        android:textSize="20sp"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/nombre_apellidos"
+        android:textSize="20sp"
+        android:textColorHint="@color/verde_83"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modalidad_estudio"
+        android:textSize="20sp"
+        android:textColor="@color/verde_83"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/virtual" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/presencial" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/semipresencial" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_nacimiento"
+        android:textSize="20sp"
+        android:textColor="@color/verde_83"
+        android:layout_marginTop="25dp"
+        />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sede"
+        android:textSize="20sp"
+        android:textColor="@color/verde_83"
+        android:layout_marginTop="25dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sedes"
+        android:padding="5dp" />
+
+    <CheckBox android:id="@+id/checkbox_terminos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Curso Activo"
+        android:layout_marginTop="15dp"
+        />
+
+    <CheckBox android:id="@+id/checkbox_avisos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Curso Activo"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:text="@string/login_registrar"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/verde_187"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:text="Limpiar"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_640"
+            android:layout_marginStart="16dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

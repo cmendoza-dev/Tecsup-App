@@ -9,11 +9,20 @@
     <string name="apple">Curso de iOS</string>
     <string name="java">Curso de Java</string>
     <string name="bienvenido">Bienvenido</string>
+    <string name="dni">DNI</string>
+    <string name="nombre_apellidos">Nombre y Apellidos</string>
+    <string name="modalidad_estudio">Modalidad de Estudio</string>
+    <string name="virtual">Virtual</string>
+    <string name="presencial">Presencial</string>
+    <string name="semipresencial">Semipresencial</string>
+    <string name="fecha_nacimiento">Fecha Nacimiento</string>
+    <string name="sede">Sede</string>
     <string name="diseno_interiores">¿DE QUÉ TRATA LA CARRERA DE DISEÑO DE INTERIORES?</string>
     <string name="comunicacion_audiovisual">¿POR QUÉ ESTUDIAR COMUNICACIÓN AUDIOVISUAL?</string>
     <string name="ideas_regalos">15 NOVEDOSAS IDEAS DE REGALOS PARA SAN VALENTIN</string>
     <string name="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non efficitur nibh, ut tempus eros. Proin eu convallis lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque erat diam, iaculis sed ultrices quis, tempor sit amet nulla. Aenean fringilla est sed sodales ullamcorper. Proin ut metus at libero tempor ullamcorper. Phasellus vel commodo lorem, eget iaculis sem. Morbi tincidunt luctus sollicitudin. Proin auctor eget augue vel ornare.</string>
-
+    <string name="terminos">Acepto los términos y condiciones</string>
+    <string name="avisos">Deseo recibir avisos y publicidad</string>
 
     <string-array name="cargos">
         <item>Estudiante</item>
@@ -23,4 +32,13 @@
         <item>Coordinador</item>
         <item>Asistente</item>
     </string-array>
+
+    <string-array name="sedes">
+        <item>Trujillo</item>
+        <item>Lima</item>
+        <item>Arequipa</item>
+    </string-array>
+
+
+
 </resources>
