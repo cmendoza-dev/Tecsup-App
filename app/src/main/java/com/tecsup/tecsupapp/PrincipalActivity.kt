@@ -15,6 +15,16 @@ class PrincipalActivity: AppCompatActivity()  {
             startActivity(Intent(this, Registercourse::class.java))
         }
 
+        val botton = findViewById<Button>(R.id.btnNoticias)
+        botton.setOnClickListener {
+            startActivity(Intent(this, InfoCursoActivity::class.java))
+        }
+
+        val boton = findViewById<Button>(R.id.btnRegNotas)
+        boton.setOnClickListener {
+            startActivity(Intent(this, CursoActivity::class.java))
+        }
+
 
     }
 

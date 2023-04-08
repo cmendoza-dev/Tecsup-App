@@ -25,6 +25,7 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".PrincipalActivity"/>
         <activity android:name=".Registercourse"/>
+        <activity android:name=".CursoActivity"/>
 
     </application>
 

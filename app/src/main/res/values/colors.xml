@@ -12,6 +12,10 @@
     <color name="verde_83">#03dac5</color>
     <color name="purple_640">#6404ee</color>
     <color name="purple_86">#bb86fc</color>
+    <color name="azul_653"> #153653</color>
+    <color name="gris">  #e9edf0</color>
+    <color name="gris_9c">#9c9c9c</color>
+
 
 
 </resources>
