@@ -10,8 +10,6 @@
 
     >
 
-
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -136,7 +134,15 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="15dp"
+        android:entries="@array/anhos"
+        android:padding="5dp"
         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/sedes"
+        android:background="@android:drawable/divider_horizontal_bright" />
 
     <CheckBox android:id="@+id/checkbox_meat"
         android:layout_width="match_parent"

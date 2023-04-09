@@ -14,4 +14,10 @@ class RegistrarEstudianteActivity: AppCompatActivity() {
         supportActionBar?.setBackgroundDrawable(drawable)
 
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }

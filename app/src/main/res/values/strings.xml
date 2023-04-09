@@ -54,6 +54,11 @@
         <item>Gestión y Mantenimiento de Maquinaria Pesada</item>
     </string-array>
 
-
+    <string-array name="anhos">
+        <item>2023-I</item>
+        <item>2023-II</item>
+        <item>2022-I</item>
+        <item>2022-II</item>
+    </string-array>
 
 </resources>

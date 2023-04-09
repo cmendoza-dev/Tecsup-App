@@ -1,9 +1,11 @@
 package com.tecsup.tecsupapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class PrincipalActivity: AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +21,29 @@ class PrincipalActivity: AppCompatActivity()  {
 
         val bottom = findViewById<Button>(R.id.btnNoticias)
         bottom.setOnClickListener {
-            startActivity(Intent(this, InfoCursoActivity::class.java))
+           startActivity(Intent(this, InfoCursoActivity::class.java))
         }
+
+        val btnNoticia = findViewById<Button>(R.id.btnNoticia)
+        val fabWeb = findViewById<FloatingActionButton>(R.id.fabWeb)
+
+        val uriPhone: Uri = Uri.parse("tel: 985919866")
+        btnNoticia.setOnClickListener{
+            startActivity(Intent(Intent.ACTION_DIAL, uriPhone))
+        }
+
+        val uriWeb: Uri = Uri.parse("https://www.tecsup.edu.pe/")
+        fabWeb.setOnClickListener{
+            startActivity(Intent(Intent.ACTION_VIEW, uriWeb))
+        }
+
+        val sendIntent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, "Mensaje Enviar")
+            type = "text/plain"
+        }
+        startActivity(sendIntent)
+
 
         val bot = findViewById<Button>(R.id.btnRegNotas)
         bot.setOnClickListener {
