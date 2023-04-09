@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         }, 5000)
 
+        supportActionBar?.hide()
 
     }
 }

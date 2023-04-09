@@ -10,6 +10,8 @@ class PrincipalActivity: AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
 
+        supportActionBar?.hide()
+
         val button = findViewById<Button>(R.id.btnRegCurso)
         button.setOnClickListener {
             startActivity(Intent(this, Registercourse::class.java))

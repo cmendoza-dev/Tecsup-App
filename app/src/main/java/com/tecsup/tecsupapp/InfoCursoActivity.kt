@@ -8,7 +8,7 @@ class InfoCursoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_infocurso)
 
-
+        supportActionBar?.hide()
 
     }
 }
