@@ -14,6 +14,12 @@ class RegistrarDocenteActivity:AppCompatActivity() {
         val drawable = resources.getDrawable(R.color.purple_640)
         supportActionBar?.setBackgroundDrawable(drawable)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }
 
 

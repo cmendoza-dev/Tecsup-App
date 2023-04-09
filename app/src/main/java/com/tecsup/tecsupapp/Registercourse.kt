@@ -16,7 +16,16 @@ class Registercourse : AppCompatActivity() {
         supportActionBar?.title = getString(string.tituloRegistroUsuario)
         val drawable = resources.getDrawable(R.color.purple_640)
         supportActionBar?.setBackgroundDrawable(drawable)
+
+
+
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }
 
 
