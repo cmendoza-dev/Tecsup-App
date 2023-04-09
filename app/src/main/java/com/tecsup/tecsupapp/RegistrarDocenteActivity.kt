@@ -13,8 +13,7 @@ class RegistrarDocenteActivity:AppCompatActivity() {
         supportActionBar?.title = getString(R.string.tituloGestionDocente)
         val drawable = resources.getDrawable(R.color.purple_640)
         supportActionBar?.setBackgroundDrawable(drawable)
-
-
-
     }
 }
+
+

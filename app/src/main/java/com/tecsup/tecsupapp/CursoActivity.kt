@@ -9,6 +9,9 @@ class CursoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_cursos)
+
+        supportActionBar?.hide()
+
     }
 
 
