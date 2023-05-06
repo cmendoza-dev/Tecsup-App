@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.TecsupApp.AppWidget.Container"
+    android:layout_width="380dp"
+    android:layout_height="280dp"
+    android:theme="@style/Theme.TecsupApp.AppWidgetContainer"
+    android:orientation="vertical"
+    android:background="@drawable/bordergris"
+    >
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:src="@drawable/newlogo"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="@string/parrafo"
+            android:textStyle="italic"
+            android:textSize="16.3sp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="6"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:ellipsize="end"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:src="@drawable/helpsnasa"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris_9c"
+                android:text="Jaench Mcon for The New York Times"
+                android:textSize="5sp"
+                android:layout_gravity="end"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

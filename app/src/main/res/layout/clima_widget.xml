@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.TecsupApp.AppWidget.Container"
+    android:layout_width="350dp"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:theme="@style/Theme.TecsupApp.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sun"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20º"
+            android:textSize="60sp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Trujillo"
+                android:textColor="@color/azul_653"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Soleado"
+                android:textColor="@color/azul_653"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="23º"
+                    android:textColor="@color/azul_653"
+                    android:textSize="22sp"
+                    android:layout_marginEnd="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="15º"
+                    android:textColor="@color/verde_83"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

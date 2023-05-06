@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemRegister"
+        android:icon="@drawable/registrar"
+        android:title="@string/registrar"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/buscar"
+        android:title="@string/buscar"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/new_group"
+        android:icon="@drawable/nuevogrupo"
+        android:title="@string/nuevogrupo" />
+
+    <item
+        android:id="@+id/whatsapp_web"
+        android:icon="@drawable/whatsapp"
+        android:title="@string/whatsappweb" />
+
+    <item
+        android:id="@+id/highlighted_messages"
+        android:icon="@drawable/mensajesdestacados"
+        android:title="@string/mensajesdestacados" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ajustes"
+        android:title="@string/ajustes" />
+
+</menu>

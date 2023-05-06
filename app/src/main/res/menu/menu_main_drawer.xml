@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notices"
+            android:icon="@drawable/noticias"
+            android:title="@string/noticias"
+
+            />
+        <item
+            android:id="@+id/nav_curse"
+            android:icon="@drawable/cursos"
+            android:title="@string/cursos" />
+        <item
+            android:id="@+id/nav_teachers"
+            android:icon="@drawable/profesor"
+            android:title="@string/profesores"
+            />
+        <item
+            android:id="@+id/nav_students"
+            android:icon="@drawable/student"
+            android:title="@string/estudiantes"/>
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/notas"
+            android:title="@string/notas" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <menu
+            android:title="@string/comunicaciones">
+
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contactanos"
+                android:title="@string/contactanos"/>
+            <item
+                android:id="@+id/nav_book"
+                android:icon="@drawable/libroreclamaciones"
+                android:title="@string/libroreclamaciones" />
+
+        </menu>
+
+    </group>
+
+</menu>

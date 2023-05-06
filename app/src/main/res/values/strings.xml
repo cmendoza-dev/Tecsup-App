@@ -60,5 +60,35 @@
         <item>2022-I</item>
         <item>2022-II</item>
     </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="prgmovil">Aplicaciones Móviles - Examen</string>
+    <string name="title">De las profundidades del espacio a las paredes de una galería</string>
+    <string name="parrafo">La artista Ashley Zelinskie está ayudando a los científicos de la NASA a compartir su trabajo con audiencias más amplias.</string>
+
+    <string name="menu_calculator">Calculadora</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="libroreclamaciones">Libro de reclamaciones</string>
+    <string name="noticias">Noticias</string>
+    <string name="cursos">Cursos</string>
+    <string name="profesores">Profesores</string>
+    <string name="estudiantes">Estudiantes</string>
+    <string name="notas">Notas</string>
+    <string name="contactanos">Contáctanos</string>
+    <string name="comunicaciones">Comunicaciones</string>
+
+    <string name="ajustes">Ajustes</string>
+    <string name="llamar">Llamar</string>
+    <string name="mensaje">Mensaje</string>
+
+    <string name="registrar">Registrar</string>
+    <string name="buscar">Buscar</string>
+    <string name="nuevogrupo">Nuevo Grupo</string>
+
+    <string name="whatsappweb">Whatsapp Web</string>
+    <string name="mensajesdestacados">Mensajes destacados</string>
 
 </resources>

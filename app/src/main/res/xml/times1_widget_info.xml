@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description"
+    android:initialKeyguardLayout="@layout/times1_widget"
+    android:initialLayout="@layout/times1_widget"
+    android:minWidth="380dp"
+    android:minHeight="150dp"
+    android:previewImage="@drawable/symbol"
+    android:previewLayout="@layout/times1_widget"
+    android:resizeMode="none"
+    android:targetCellWidth="4"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen" />
