@@ -87,7 +87,7 @@
            android:id="@+id/fabWeb"
            android:layout_width="60dp"
            android:layout_height="60dp"
-           android:src="@drawable/share"
+
            app:tint="@color/verde_83"
 
            />
@@ -104,7 +104,7 @@
            android:id="@+id/image"
            android:layout_width="60dp"
            android:layout_height="60dp"
-           android:src="@drawable/chat"
+
            app:tint="@color/verde_83"
            android:layout_marginStart="10dp"
 
