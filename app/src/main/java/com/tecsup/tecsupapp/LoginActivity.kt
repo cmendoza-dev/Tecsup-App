@@ -12,13 +12,13 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val buttonLogin = findViewById<Button>(R.id.btnIngresar)
-        buttonLogin.setOnClickListener {
-            startActivity(Intent(this, PrincipalActivity::class.java))
+        val buttonIngresar = findViewById<Button>(R.id.btnIngresar)
+        buttonIngresar.setOnClickListener {
+            startActivity(Intent(this, DashboardActivity::class.java))
         }
 
-        val button = findViewById<Button>(R.id.btnRegistrar)
-        button.setOnClickListener {
+        val buttonRegistrar = findViewById<Button>(R.id.btnRegistrar)
+        buttonRegistrar.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 

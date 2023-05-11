@@ -76,9 +76,12 @@
     <string name="cursos">Cursos</string>
     <string name="profesores">Profesores</string>
     <string name="estudiantes">Estudiantes</string>
+
+    <string name="comunicaciones">Comunicaciones</string>
     <string name="notas">Notas</string>
     <string name="contactanos">Contáctanos</string>
-    <string name="comunicaciones">Comunicaciones</string>
+
+
 
     <string name="ajustes">Ajustes</string>
     <string name="llamar">Llamar</string>

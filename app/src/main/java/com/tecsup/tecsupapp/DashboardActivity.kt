@@ -15,6 +15,9 @@ class DashboardActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+        supportActionBar?.hide()
+
+
         val register = findViewById<Button>(R.id.btnCourse)
         val student = findViewById<Button>(R.id.btnStudent)
         val notes = findViewById<Button>(R.id.btnNotas)

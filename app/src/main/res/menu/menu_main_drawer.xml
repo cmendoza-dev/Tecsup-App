@@ -34,7 +34,8 @@
     <group android:checkableBehavior="single">
 
         <menu
-            android:title="@string/comunicaciones">
+            android:title="@string/comunicaciones"
+            android:checkable="false">
 
             <item
                 android:id="@+id/nav_contact"
