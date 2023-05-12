@@ -2,6 +2,7 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
@@ -31,11 +32,13 @@
 
     </group>
 
-    <group android:checkableBehavior="single">
-
-        <menu
-            android:title="@string/comunicaciones"
-            android:checkable="false">
+    <item
+        android:title="@string/comunicaciones"
+        android:checkable="false">
+    <menu>
+    <group
+        android:checkableBehavior="single"
+            >
 
             <item
                 android:id="@+id/nav_contact"
@@ -46,8 +49,10 @@
                 android:icon="@drawable/libroreclamaciones"
                 android:title="@string/libroreclamaciones" />
 
-        </menu>
+
 
     </group>
+    </menu>
+    </item>
 
 </menu>

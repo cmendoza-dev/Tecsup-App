@@ -107,7 +107,7 @@ class DashboardActivity: AppCompatActivity() {
                     true
                 }
                 R.id.nav_teachers -> {
-                    Toast.makeText(this, "Profesore", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Profesores", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.nav_students -> {

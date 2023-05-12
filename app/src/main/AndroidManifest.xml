@@ -96,7 +96,9 @@
         <activity android:name=".RegistrarDocenteActivity" />
         <activity android:name=".RegistrarEstudianteActivity" />
         <activity android:name=".DashboardActivity"/>
-        <activity android:name=".NotasActivity">
+        <activity android:name=".NotasActivity"
+            android:label="@string/comunicaciones"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".DashboardActivity" />
