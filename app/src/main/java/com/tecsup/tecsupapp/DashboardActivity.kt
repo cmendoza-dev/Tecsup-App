@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.tecsup.tecsupapp.trica.TricaActivity
 
 class DashboardActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,11 +18,16 @@ class DashboardActivity: AppCompatActivity() {
 
         supportActionBar?.hide()
 
-
         val register = findViewById<Button>(R.id.btnCourse)
         val student = findViewById<Button>(R.id.btnStudent)
         val notes = findViewById<Button>(R.id.btnNotas)
         val docent = findViewById<Button>(R.id.btnDocent)
+
+        val trica = findViewById<Button>(R.id.btnNoticias)
+        trica.setOnClickListener {
+            startActivity(Intent(this, TricaActivity::class.java))
+        }
+
 
         val courseActivity = Intent(this, CursoActivity::class.java)
         val registerStudentActivity = Intent(this, RegistrarEstudianteActivity::class.java)

@@ -94,4 +94,20 @@
     <string name="whatsappweb">Whatsapp Web</string>
     <string name="mensajesdestacados">Mensajes destacados</string>
 
+    <string name="trica">Calculadora del Trica</string>
+    <string name="sistema_evaluacion">Sistema de Evaluación</string>
+    <string-array name="evaluacion">
+        <item>A: 30% T + 70% L</item>
+        <item>B: 40% T + 60% L</item>
+    </string-array>
+    <string  name="prom">Prom: - - - -</string >
+    <string  name="promedio">Promedio: </string >
+    <string  name="practicaOne">Práctica 1</string >
+    <string  name="practicaTwo">Práctica 2</string >
+    <string  name="practicaThree">Práctica 3</string >
+    <string  name="practicaFour">Práctica 4</string >
+
+
+
+
 </resources>

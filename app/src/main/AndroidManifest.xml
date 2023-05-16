@@ -96,6 +96,7 @@
         <activity android:name=".RegistrarDocenteActivity" />
         <activity android:name=".RegistrarEstudianteActivity" />
         <activity android:name=".DashboardActivity"/>
+        <activity android:name=".trica.TricaActivity"/>
         <activity android:name=".NotasActivity"
             android:label="@string/comunicaciones"
             >
