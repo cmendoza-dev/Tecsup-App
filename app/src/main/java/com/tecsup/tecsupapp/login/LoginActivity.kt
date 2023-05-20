@@ -10,6 +10,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.tecsup.tecsupapp.DashboardActivity
 import com.tecsup.tecsupapp.R
 import com.tecsup.tecsupapp.RegisterActivity
+import com.tecsup.tecsupapp.notas.NotaActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -34,9 +35,14 @@ class LoginActivity : AppCompatActivity() {
 
         observableViewModel()
 
-        val buttonRegistrar = findViewById<Button>(R.id.btnRegistrar)
+        /*val buttonRegistrar = findViewById<Button>(R.id.btnRegistrar)
         buttonRegistrar.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
+        }*/
+
+        val buttonRegistrar = findViewById<Button>(R.id.btnRegistrar)
+        buttonRegistrar.setOnClickListener {
+            startActivity(Intent(this, NotaActivity::class.java))
         }
 
         supportActionBar?.hide()
