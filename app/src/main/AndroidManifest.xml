@@ -104,6 +104,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".DashboardActivity" />
         </activity>
+        <activity android:name=".notas.NotaActivity"/>
     </application>
 
 </manifest>
