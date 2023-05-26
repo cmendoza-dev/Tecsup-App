@@ -176,8 +176,8 @@
         android:layout_gravity="end"
         app:headerLayout="@layout/menu_header_main_left"
         app:menu="@menu/menu_main_drawer"
-        app:itemTextColor="@color/nav_lila_bf8"
-        app:itemIconTint="@color/nav_lila_bf8"
+        app:itemTextColor="@color/nav_celeste_ab"
+        app:itemIconTint="@color/nav_celeste_ab"
         android:background="@color/white"
 
     />
