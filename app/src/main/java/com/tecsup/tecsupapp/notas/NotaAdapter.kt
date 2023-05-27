@@ -5,8 +5,15 @@ import android.view.ViewGroup
 import android.widget.AdapterView.OnItemClickListener
 import androidx.recyclerview.widget.RecyclerView
 
-class NotaAdapter(private var notaLista: List<Nota>):
+class NotaAdapter():
     RecyclerView.Adapter<NotaViewHolder>() {
+
+    private var notaLista = emptyList<Nota>()
+
+    fun setNota(notas: List<Nota>){
+        this.notaLista = notas
+        this.notifyDataSetChanged()
+    }
 
     override fun getItemCount(): Int {
         return notaLista.size
