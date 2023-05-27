@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.tecsup.tecsupapp.libros.LibroActivity
 import com.tecsup.tecsupapp.trica.TricaActivity
 
 class DashboardActivity: AppCompatActivity() {
@@ -29,7 +30,7 @@ class DashboardActivity: AppCompatActivity() {
         }
 
 
-        val courseActivity = Intent(this, CursoActivity::class.java)
+        val courseActivity = Intent(this, LibroActivity::class.java)
         val registerStudentActivity = Intent(this, RegistrarEstudianteActivity::class.java)
         val notesActivity = Intent(this, NotasActivity::class.java)
         val docentActivity = Intent(this, RegistrarDocenteActivity::class.java)

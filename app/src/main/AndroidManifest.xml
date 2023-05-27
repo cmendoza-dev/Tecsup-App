@@ -105,6 +105,7 @@
                 android:value=".DashboardActivity" />
         </activity>
         <activity android:name=".notas.NotaActivity"/>
+        <activity android:name=".libros.LibroActivity"/>
     </application>
 
 </manifest>
