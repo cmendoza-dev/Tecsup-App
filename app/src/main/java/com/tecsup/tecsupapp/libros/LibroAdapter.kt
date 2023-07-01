@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.tecsup.tecsupapp.R
 
-class LibroAdapter(private val bookList: List<Libro>) : RecyclerView.Adapter<LibroAdapter.ViewHolder>() {
+class LibroAdapter(private val bookList: List<Libro>) :
+    RecyclerView.Adapter<LibroAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.book_item, parent, false)

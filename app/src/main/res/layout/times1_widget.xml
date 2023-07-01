@@ -1,68 +1,61 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Widget.TecsupApp.AppWidget.Container"
     android:layout_width="380dp"
-    android:background="@drawable/border"
     android:layout_height="150dp"
-    android:theme="@style/Theme.TecsupApp.AppWidgetContainer"
-    android:orientation="vertical"
+    android:background="@drawable/border"
     android:gravity="center"
-    >
+    android:orientation="vertical"
+    android:theme="@style/Theme.TecsupApp.AppWidgetContainer">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/symbol"
+            android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_gravity="center"
-            />
+            android:src="@drawable/symbol" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title"
-            android:textColor="@color/black"
             android:fontFamily="sans-serif-medium"
-            android:textSize="13.15dp"
-            android:textFontWeight="900"
-            android:textAlignment="viewStart"
             android:justificationMode="inter_word"
+            android:text="@string/title"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textFontWeight="900"
+            android:textSize="13.15dp"
 
 
             ></TextView>
 
     </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/parrafo"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textAlignment="viewStart"
-            android:justificationMode="inter_word"
-            android:textStyle="italic"
-            />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/parrafo"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textStyle="italic"
-            android:textAlignment="viewStart"
-            android:justificationMode="inter_word"
-            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="@string/parrafo"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:textStyle="italic" />
 
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="@string/parrafo"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:textStyle="italic" />
 
 
 </LinearLayout>

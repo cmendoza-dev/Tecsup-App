@@ -8,7 +8,7 @@ import com.tecsup.tecsupapp.notas.Nota
 import com.tecsup.tecsupapp.notas.NotaDAO
 
 @Database(entities = [Nota::class], version = 1)
-abstract class TecsupDataBase: RoomDatabase() {
+abstract class TecsupDataBase : RoomDatabase() {
 
     abstract fun notaDAO(): NotaDAO
 
@@ -19,9 +19,9 @@ abstract class TecsupDataBase: RoomDatabase() {
         @Volatile
         private var INSTANCE: TecsupDataBase? = null
 
-        fun getInstance(context:Context): TecsupDataBase? {
+        fun getInstance(context: Context): TecsupDataBase? {
             INSTANCE
-                ?: synchronized(this){
+                ?: synchronized(this) {
                     INSTANCE = Room.databaseBuilder(
                         context.applicationContext,
                         TecsupDataBase::class.java,

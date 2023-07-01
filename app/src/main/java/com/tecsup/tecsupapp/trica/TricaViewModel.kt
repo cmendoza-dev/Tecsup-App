@@ -44,7 +44,7 @@ class TricaViewModel : ViewModel() {
             tricaStringError.value = "Ingrese una nota válida"
         }
 
-        return (pTeo1 + pTeo2)/2*0.40 + (pLab1 + pLab2 + pLab3 + pLab4)/4*0.60
+        return (pTeo1 + pTeo2) / 2 * 0.40 + (pLab1 + pLab2 + pLab3 + pLab4) / 4 * 0.60
 
     }
 }

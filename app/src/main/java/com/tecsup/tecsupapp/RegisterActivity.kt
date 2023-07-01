@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
-class RegisterActivity : AppCompatActivity(){
+class RegisterActivity : AppCompatActivity() {
 
-    lateinit var opciones:Spinner
+    lateinit var opciones: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

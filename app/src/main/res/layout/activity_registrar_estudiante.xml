@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,35 +9,32 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:padding="20dp"
-        >
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:text="Registro de Estudiantes"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:textStyle="bold"
-            />
+            android:text="Registro de Estudiantes"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:hint="@string/dni"
-            android:textSize="20sp"
-            android:textColorHint="@color/verde_83"
             android:layout_marginTop="25dp"
-            >
+            android:hint="@string/dni"
+            android:textColorHint="@color/verde_83"
+            android:textSize="20sp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:inputType="text"
-                />
+                tools:ignore="MissingClass" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -45,18 +42,16 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:hint="@string/nombre_apellidos"
-            android:textSize="20sp"
-            android:textColorHint="@color/verde_83"
             android:layout_marginTop="25dp"
-            >
+            android:hint="@string/nombre_apellidos"
+            android:textColorHint="@color/verde_83"
+            android:textSize="20sp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:inputType="text"
-                />
+                android:inputType="text" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -64,11 +59,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/modalidad_estudio"
-            android:textSize="20sp"
-            android:textColor="@color/verde_83"
             android:layout_marginTop="25dp"
-            />
+            android:text="@string/modalidad_estudio"
+            android:textColor="@color/verde_83"
+            android:textSize="20sp" />
 
 
         <RadioGroup
@@ -103,29 +97,26 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/fecha_nacimiento"
-            android:textSize="20sp"
-            android:textColor="@color/verde_83"
             android:layout_marginTop="25dp"
-            />
+            android:text="@string/fecha_nacimiento"
+            android:textColor="@color/verde_83"
+            android:textSize="20sp" />
 
         <DatePicker
             android:id="@+id/datePicker1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:datePickerMode="spinner"
-            android:calendarViewShown="false"
             android:layout_gravity="center"
-            />
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="@string/sede"
-            android:textSize="20sp"
-            android:textColor="@color/verde_83"
             android:layout_marginTop="25dp"
-            />
+            android:text="@string/sede"
+            android:textColor="@color/verde_83"
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/sedes"
@@ -133,6 +124,7 @@
             android:layout_height="wrap_content"
             android:entries="@array/sedes"
             android:padding="5dp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -140,23 +132,21 @@
             android:background="@android:drawable/divider_horizontal_bright" />
 
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="@string/carrera"
-            android:textSize="20sp"
-            android:textColor="@color/verde_83"
             android:layout_marginTop="25dp"
-            />
+            android:text="@string/carrera"
+            android:textColor="@color/verde_83"
+            android:textSize="20sp" />
 
         <Spinner
-                android:id="@+id/carreras"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/carreras"
-                android:padding="5dp"
-                android:layout_gravity="top" />
+            android:id="@+id/carreras"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:entries="@array/carreras"
+            android:padding="5dp" />
 
         <View
             android:layout_width="match_parent"
@@ -165,49 +155,48 @@
             android:background="@android:drawable/divider_horizontal_bright" />
 
 
-        <CheckBox android:id="@+id/checkbox_terminos"
+        <CheckBox
+            android:id="@+id/checkbox_terminos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/terminos"
             android:layout_marginTop="30dp"
-            />
+            android:text="@string/terminos" />
 
-        <CheckBox android:id="@+id/checkbox_avisos"
+        <CheckBox
+            android:id="@+id/checkbox_avisos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/avisos"
             android:layout_marginTop="10dp"
-            />
+            android:text="@string/avisos" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:gravity="center_horizontal"
-            >
+            android:gravity="center_horizontal">
+
             <Button
                 android:id="@+id/btnRegistrar"
-                android:text="@string/login_registrar"
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:backgroundTint="@color/verde_187"
                 android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/verde_187"
+                android:text="@string/login_registrar"
 
                 />
 
             <Button
                 android:id="@+id/btnLimpiar"
-                android:text="Limpiar"
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:backgroundTint="@color/purple_640"
                 android:layout_marginStart="16dp"
+                android:backgroundTint="@color/purple_640"
+                android:text="Limpiar"
 
                 />
 
         </LinearLayout>
 
 
-
     </LinearLayout>
-    </ScrollView>
+</ScrollView>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
     android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
 
     >
 
@@ -14,118 +13,104 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Registro de Cursos"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        />
+        android:text="Registro de Cursos"
+        android:textSize="25dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="135dp"
-        android:layout_height="60dp"
-        android:hint="Código"
-        android:textColorHint="@color/verde_83"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="11dp"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="135dp"
             android:layout_height="60dp"
-
-            android:backgroundTint="@color/white"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="11dp"
-            />
+            android:hint="Código"
+            android:textColorHint="@color/verde_83">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+
+                android:layout_marginEnd="11dp"
+                android:backgroundTint="@color/white" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="210dp"
-        android:layout_height="60dp"
-        android:hint="Nombre Curso"
-        android:textColorHint="@color/verde_83"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="11dp"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="210dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/white"
             android:layout_marginStart="11dp"
-            />
+            android:layout_marginTop="30dp"
+            android:hint="Nombre Curso"
+            android:textColorHint="@color/verde_83">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="11dp"
+                android:backgroundTint="@color/white" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
 
         <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="135dp"
-        android:layout_height="60dp"
-        android:hint="DNI"
-        android:textColorHint="@color/verde_83"
-        android:layout_marginTop="15dp"
+            android:layout_width="135dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
-        >
+            android:hint="DNI"
+            android:textColorHint="@color/verde_83">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="135dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginEnd="11dp"
-            />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="11dp"
+                android:backgroundTint="@color/white" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="210dp"
-        android:layout_height="60dp"
-        android:hint="Profesor"
-        android:textColorHint="@color/verde_83"
-        android:layout_marginTop="15dp"
-            android:layout_marginStart="11dp"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="210dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginStart="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:hint="Profesor"
+            android:textColorHint="@color/verde_83">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Carrera"
-        android:textColorHint="@color/verde_83"
         android:layout_marginTop="15dp"
-        >
+        android:hint="Carrera"
+        android:textColorHint="@color/verde_83">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:backgroundTint="@color/white"
-            />
+            android:backgroundTint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -135,8 +120,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="15dp"
         android:entries="@array/anhos"
-        android:padding="5dp"
-        />
+        android:padding="5dp" />
 
     <View
         android:layout_width="match_parent"
@@ -144,36 +128,36 @@
         android:layout_below="@id/sedes"
         android:background="@android:drawable/divider_horizontal_bright" />
 
-    <CheckBox android:id="@+id/checkbox_meat"
+    <CheckBox
+        android:id="@+id/checkbox_meat"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Curso Activo"
         android:layout_marginTop="15dp"
-        />
+        android:text="Curso Activo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
+
         <Button
             android:id="@+id/btnRegistrarcurso"
-            android:text="@string/login_registrar"
             android:layout_width="170dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/azul_620"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/azul_620"
+            android:text="@string/login_registrar"
 
             />
 
         <Button
             android:id="@+id/btnLimpiar"
-            android:text="Limpiar"
             android:layout_width="170dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/purple_86"
             android:layout_marginStart="16dp"
+            android:backgroundTint="@color/purple_86"
+            android:text="Limpiar"
 
             />
 

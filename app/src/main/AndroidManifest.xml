@@ -97,17 +97,19 @@
         <activity android:name=".InfoCursoActivity" />
         <activity android:name=".RegistrarDocenteActivity" />
         <activity android:name=".RegistrarEstudianteActivity" />
-        <activity android:name=".DashboardActivity"/>
-        <activity android:name=".trica.TricaActivity"/>
-        <activity android:name=".NotasActivity"
-            android:label="@string/comunicaciones"
-            >
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".trica.TricaActivity" />
+        <activity
+            android:name=".NotasActivity"
+
+            android:label="@string/comunicaciones">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".DashboardActivity" />
         </activity>
-        <activity android:name=".notas.NotaActivity"/>
-        <activity android:name=".libros.LibroActivity"/>
+        <activity android:name=".notas.NotaActivity" />
+        <activity android:name=".libros.LibroActivity" />
+        <activity android:name=".NoticiasActivity" />
     </application>
 
 </manifest>

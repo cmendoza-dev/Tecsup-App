@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
-    >
+    android:gravity="center"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="450dp"
@@ -19,56 +17,52 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:hint="@string/login_correo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/login_correo"
         android:textColorHint="@color/verde_83">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edtCorreo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:backgroundTint="@color/white"
-        android:inputType="textEmailAddress"
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textColorHint="@color/verde_83"
         android:layout_marginTop="20dp"
-        app:passwordToggleTint="@color/purple_700"
+        android:hint="@string/login_contrasena"
+        android:textColorHint="@color/verde_83"
         app:passwordToggleEnabled="true"
-        android:hint="@string/login_contrasena">
+        app:passwordToggleTint="@color/purple_700">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtClave"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/white"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnIngresar"
-            android:text="@string/login_ingresar"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/azul_620"
-            android:layout_marginTop="40dp"
-             />
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/azul_620"
+        android:text="@string/login_ingresar" />
 
-        <Button
-            android:id="@+id/btnRegistrar"
-            android:text="@string/login_registrar"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/verde_187"
-             />
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/verde_187"
+        android:text="@string/login_registrar" />
 
 </LinearLayout>
 

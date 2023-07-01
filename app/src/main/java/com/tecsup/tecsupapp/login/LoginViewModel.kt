@@ -8,7 +8,7 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.observers.DisposableSingleObserver
 import io.reactivex.rxjava3.schedulers.Schedulers
 
-class LoginViewModel: ViewModel() {
+class LoginViewModel : ViewModel() {
 
     private val repository = LoginRepository()
 
@@ -44,7 +44,6 @@ class LoginViewModel: ViewModel() {
                 })
         )
     }
-
 
 
 }

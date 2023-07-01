@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class PrincipalActivity : AppCompatActivity()  {
+class PrincipalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
@@ -21,19 +21,19 @@ class PrincipalActivity : AppCompatActivity()  {
 
         val bottom = findViewById<Button>(R.id.btnNoticias)
         bottom.setOnClickListener {
-           startActivity(Intent(this, InfoCursoActivity::class.java))
+            startActivity(Intent(this, InfoCursoActivity::class.java))
         }
 
         val btnNoticia = findViewById<Button>(R.id.btnNoticia)
         val fabWeb = findViewById<FloatingActionButton>(R.id.fabWeb)
 
         val uriPhone: Uri = Uri.parse("tel: 985919866")
-        btnNoticia.setOnClickListener{
+        btnNoticia.setOnClickListener {
             startActivity(Intent(Intent.ACTION_DIAL, uriPhone))
         }
 
         val uriWeb: Uri = Uri.parse("https://www.tecsup.edu.pe/")
-        fabWeb.setOnClickListener{
+        fabWeb.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, uriWeb))
         }
 
@@ -59,8 +59,6 @@ class PrincipalActivity : AppCompatActivity()  {
         btndocente.setOnClickListener {
             startActivity(Intent(this, RegistrarDocenteActivity::class.java))
         }
-
-
 
 
     }

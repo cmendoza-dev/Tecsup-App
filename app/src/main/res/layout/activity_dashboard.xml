@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
     android:background="@color/white"
-    >
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="20dp"
         android:orientation="vertical"
+        android:paddingTop="20dp"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/moreInfo"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/menu"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:layout_marginStart="10dp"
+            android:background="@drawable/menu"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/userBtn"
@@ -33,7 +31,7 @@
             android:layout_height="50dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/user"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" />
 
 
         <LinearLayout
@@ -108,8 +106,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/triangleEnd">
+            app:layout_constraintBottom_toTopOf="@+id/triangleEnd"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/connect"
@@ -118,7 +116,7 @@
                 android:layout_marginStart="16dp"
                 android:src="@drawable/contactanos"
                 app:backgroundTint="@color/teal_200"
-                app:tint="@color/white"/>
+                app:tint="@color/white" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/share"
@@ -128,18 +126,18 @@
                 android:layout_marginBottom="10dp"
                 android:src="@drawable/share"
                 app:backgroundTint="@color/teal_200"
-                app:tint="@color/white"/>
+                app:tint="@color/white" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/comments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
                 android:src="@drawable/forum"
                 app:backgroundTint="@color/teal_200"
-                app:tint="@color/white"/>
+                app:tint="@color/white" />
 
         </LinearLayout>
 
@@ -152,7 +150,7 @@
             android:background="@drawable/triangle"
             android:gravity="bottom|start"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -161,11 +159,11 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/menu_header_main"
-        app:menu="@menu/menu_main_drawer_left"
-        app:itemTextColor="@color/black"
-        app:itemIconTint="@color/black"
         android:background="@color/white"
+        app:headerLayout="@layout/menu_header_main"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu_main_drawer_left"
 
         />
 
@@ -174,16 +172,13 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="end"
-        app:headerLayout="@layout/menu_header_main_left"
-        app:menu="@menu/menu_main_drawer"
-        app:itemTextColor="@color/nav_celeste_ab"
-        app:itemIconTint="@color/nav_celeste_ab"
         android:background="@color/white"
+        app:headerLayout="@layout/menu_header_main_left"
+        app:itemIconTint="@color/nav_celeste_ab"
+        app:itemTextColor="@color/nav_celeste_ab"
+        app:menu="@menu/menu_main_drawer"
 
-    />
-
-
-
+        />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

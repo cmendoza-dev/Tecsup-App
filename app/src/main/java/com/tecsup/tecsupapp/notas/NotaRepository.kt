@@ -6,21 +6,21 @@ import com.tecsup.tecsupapp.database.TecsupDataBase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class NotaRepository (application: Application) {
+class NotaRepository(application: Application) {
 
-    private val noteDAO: NotaDAO ?= TecsupDataBase.getInstance(application)?.notaDAO()
+    private val noteDAO: NotaDAO? = TecsupDataBase.getInstance(application)?.notaDAO()
 
-    suspend fun  insertNoteWithCoroutines(nota: Nota){
+    suspend fun insertNoteWithCoroutines(nota: Nota) {
         processInsertNote(nota)
     }
 
-    private suspend fun  processInsertNote(nota: Nota){
+    private suspend fun processInsertNote(nota: Nota) {
         withContext(Dispatchers.Default) {
             noteDAO?.insert(nota)
         }
     }
 
-    fun getNotes(): LiveData<List<Nota>>?{
+    fun getNotes(): LiveData<List<Nota>>? {
         return noteDAO?.getNota()
     }
 

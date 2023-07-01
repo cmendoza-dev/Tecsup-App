@@ -1,18 +1,15 @@
 package com.tecsup.tecsupapp.trica
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
-import com.tecsup.tecsupapp.DashboardActivity
 import com.tecsup.tecsupapp.R
 
-class TricaActivity : AppCompatActivity(){
+class TricaActivity : AppCompatActivity() {
 
     private lateinit var viewModel: TricaViewModel
 
@@ -50,26 +47,21 @@ class TricaActivity : AppCompatActivity(){
 
             if (pTeo1.isBlank()) {
                 errorFields.add("Práctica 1")
-            }
-            else if (pTeo2.isBlank()) {
+            } else if (pTeo2.isBlank()) {
                 errorFields.add("Práctica 2")
-            }
-            else if (pLab1.isBlank()) {
+            } else if (pLab1.isBlank()) {
                 errorFields.add("Práctica 1")
-            }
-            else if (pLab2.isBlank()) {
+            } else if (pLab2.isBlank()) {
                 errorFields.add("Práctica 2")
-            }
-            else if (pLab3.isBlank()) {
+            } else if (pLab3.isBlank()) {
                 errorFields.add("Práctica 3")
-            }
-            else if (pLab4.isBlank()) {
+            } else if (pLab4.isBlank()) {
                 errorFields.add("Práctica 4")
             }
             if (errorFields.isNotEmpty()) {
                 val errorMessage = "${errorFields.joinToString(", ")}"
                 showErrorMessage(errorMessage)
-            }else {
+            } else {
                 try {
                     val result = viewModel.sumNumbers(pTeo1, pTeo2, pLab1, pLab2, pLab3, pLab4)
                     resultadoEditText.text = "  $result"

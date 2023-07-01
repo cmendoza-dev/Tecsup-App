@@ -1,11 +1,10 @@
 package com.tecsup.tecsupapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.tecsup.tecsupapp.login.LoginActivity
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +13,10 @@ class MainActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
 
-            startActivity(Intent(this,
-                LoginActivity::class.java
+            startActivity(
+                Intent(
+                    this,
+                    NoticiasActivity::class.java
                 )
             )
             finish()

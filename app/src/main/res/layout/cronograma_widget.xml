@@ -3,49 +3,48 @@
     android:layout_width="280dp"
     android:layout_height="330dp"
     android:background="@color/white"
-    android:theme="@style/Theme.TecsupApp.AppWidgetContainer"
     android:orientation="vertical"
-    >
+    android:theme="@style/Theme.TecsupApp.AppWidgetContainer">
 
     <ImageView
-        android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:src="@drawable/logo"
+        android:layout_gravity="center"
         android:scaleType="centerCrop"
+        android:src="@drawable/logo"
 
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:orientation="vertical"
         android:background="@color/light_blue_600"
+        android:orientation="vertical"
 
         >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_margin="20dp"
-            >
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/calendar_range"
-                android:layout_marginEnd="10dp"
                 android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/calendar_range"
 
 
                 />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/prgmovil"
                 android:textColor="@color/white"
-                android:textSize="13sp"
-                />
+                android:textSize="13sp" />
 
 
         </LinearLayout>

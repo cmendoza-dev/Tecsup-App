@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiService {
 
-    private val URL_BASE = "https://reqres.in/api/"
+    private val URL_BASE = "https://newsapi.org/"
 
     val apiService = Retrofit.Builder()
         .baseUrl(URL_BASE)

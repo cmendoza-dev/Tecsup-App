@@ -7,7 +7,6 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tecsup.tecsupapp.R
-import java.util.ArrayList
 
 class LibroActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
@@ -50,8 +49,9 @@ class LibroActivity : AppCompatActivity() {
 
         var titulo2 = "Don Quijote de la Mancha, Miguel de Cervantes"
 
-        var descripcion2 = "<<El amor junta los cetros con los cayados; la grandeza con la bajeza; " +
-                "hace posible lo imposible; iguala diferentes estados y viene a ser poderoso como la muerte>>"
+        var descripcion2 =
+            "<<El amor junta los cetros con los cayados; la grandeza con la bajeza; " +
+                    "hace posible lo imposible; iguala diferentes estados y viene a ser poderoso como la muerte>>"
 
         if (titulo2.length > maxTituloLongitud) {
             titulo2 = titulo2.substring(0, maxTituloLongitud) + "..."
@@ -65,8 +65,9 @@ class LibroActivity : AppCompatActivity() {
 
         var titulo3 = "El principito, de Antoine de Saint-Exupéry"
 
-        var descripcion3 = "<<He aquí mi secreto. Es muy simple: no se ve bien sino con el corazón. " +
-                "Lo esencial es invisible a los ojos>>."
+        var descripcion3 =
+            "<<He aquí mi secreto. Es muy simple: no se ve bien sino con el corazón. " +
+                    "Lo esencial es invisible a los ojos>>."
 
         if (titulo3.length > maxTituloLongitud) {
             titulo3 = titulo3.substring(0, maxTituloLongitud) + "..."

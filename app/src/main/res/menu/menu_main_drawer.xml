@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
@@ -19,12 +17,11 @@
         <item
             android:id="@+id/nav_teachers"
             android:icon="@drawable/profesor"
-            android:title="@string/profesores"
-            />
+            android:title="@string/profesores" />
         <item
             android:id="@+id/nav_students"
             android:icon="@drawable/student"
-            android:title="@string/estudiantes"/>
+            android:title="@string/estudiantes" />
         <item
             android:id="@+id/nav_notes"
             android:icon="@drawable/notas"
@@ -33,26 +30,23 @@
     </group>
 
     <item
-        android:title="@string/comunicaciones"
-        android:checkable="false">
-    <menu>
-    <group
-        android:checkableBehavior="single"
-            >
+        android:checkable="false"
+        android:title="@string/comunicaciones">
+        <menu>
+            <group android:checkableBehavior="single">
 
-            <item
-                android:id="@+id/nav_contact"
-                android:icon="@drawable/contactanos"
-                android:title="@string/contactanos"/>
-            <item
-                android:id="@+id/nav_book"
-                android:icon="@drawable/libroreclamaciones"
-                android:title="@string/libroreclamaciones" />
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/contactanos"
+                    android:title="@string/contactanos" />
+                <item
+                    android:id="@+id/nav_book"
+                    android:icon="@drawable/libroreclamaciones"
+                    android:title="@string/libroreclamaciones" />
 
 
-
-    </group>
-    </menu>
+            </group>
+        </menu>
     </item>
 
 </menu>

@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.textfield.TextInputEditText
 import com.tecsup.tecsupapp.DashboardActivity
 import com.tecsup.tecsupapp.R
-import com.tecsup.tecsupapp.RegisterActivity
 import com.tecsup.tecsupapp.notas.NotaActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -48,33 +47,29 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-    fun observableViewModel(){
-        viewModel.userLoginStringError.observe(this){
+    fun observableViewModel() {
+        viewModel.userLoginStringError.observe(this) {
             // mostrar alerta con mensaje
             alertaMensaje(it)
         }
-        viewModel.userLoginServiceResponse.observe(this){
-            if (it){
+        viewModel.userLoginServiceResponse.observe(this) {
+            if (it) {
                 startActivity(Intent(this, DashboardActivity::class.java))
             }
         }
     }
 
-    fun alertaMensaje(mensaje: String){
+    fun alertaMensaje(mensaje: String) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
         builder.setMessage(mensaje)
         builder.setCancelable(false)
-        builder.setPositiveButton("Aceptar") {_,_ ->}
+        builder.setPositiveButton("Aceptar") { _, _ -> }
 
         val alertDialog = builder.create()
         alertDialog.show()
 
     }
-
-
-
-
 
 
 }

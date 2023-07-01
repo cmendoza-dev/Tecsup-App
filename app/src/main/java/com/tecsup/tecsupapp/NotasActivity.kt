@@ -27,7 +27,7 @@ class NotasActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        when(item.itemId) {
+        when (item.itemId) {
             R.id.itemRegister -> {
                 Toast.makeText(this, "Se selecciono registrar nota", Toast.LENGTH_LONG).show()
             }
@@ -38,7 +38,6 @@ class NotasActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
 
     }
-
 
 
 }

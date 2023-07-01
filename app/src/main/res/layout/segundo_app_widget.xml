@@ -10,13 +10,12 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logo" />
 
     <AnalogClock
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imglogo"
-        />
+        android:layout_below="@+id/imglogo" />
 
 
 </RelativeLayout>

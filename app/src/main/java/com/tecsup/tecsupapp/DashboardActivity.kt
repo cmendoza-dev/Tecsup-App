@@ -1,6 +1,5 @@
 package com.tecsup.tecsupapp
 
-import android.R.layout
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -12,7 +11,7 @@ import com.google.android.material.navigation.NavigationView
 import com.tecsup.tecsupapp.libros.LibroActivity
 import com.tecsup.tecsupapp.trica.TricaActivity
 
-class DashboardActivity: AppCompatActivity() {
+class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -72,13 +71,13 @@ class DashboardActivity: AppCompatActivity() {
 
     }
 
-    private fun configurationNavegatioDrawer(){
+    private fun configurationNavegatioDrawer() {
         val navViewLeft = findViewById<NavigationView>(R.id.nav_view_left)
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
 
         navViewLeft.setNavigationItemSelectedListener { menuItem ->
             drawerLayout.closeDrawer(GravityCompat.START)
-            when(menuItem.itemId){
+            when (menuItem.itemId) {
                 R.id.nav_calculator -> {
                     Toast.makeText(this, "Calculadora", Toast.LENGTH_SHORT).show()
                     true
@@ -98,13 +97,13 @@ class DashboardActivity: AppCompatActivity() {
         }
     }
 
-    private fun configurationNavegatioDrawerLeft(){
+    private fun configurationNavegatioDrawerLeft() {
         val navView = findViewById<NavigationView>(R.id.nav_view)
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
 
         navView.setNavigationItemSelectedListener { menuItem ->
             drawerLayout.closeDrawer(GravityCompat.END)
-            when(menuItem.itemId){
+            when (menuItem.itemId) {
                 R.id.nav_notices -> {
                     Toast.makeText(this, "Noticias", Toast.LENGTH_SHORT).show()
                     true

@@ -2,15 +2,14 @@ package com.tecsup.tecsupapp.notas
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.AdapterView.OnItemClickListener
 import androidx.recyclerview.widget.RecyclerView
 
-class NotaAdapter():
+class NotaAdapter() :
     RecyclerView.Adapter<NotaViewHolder>() {
 
     private var notaLista = emptyList<Nota>()
 
-    fun setNota(notas: List<Nota>){
+    fun setNota(notas: List<Nota>) {
         this.notaLista = notas
         this.notifyDataSetChanged()
     }
@@ -26,12 +25,11 @@ class NotaAdapter():
     }
 
     override fun onBindViewHolder(holder: NotaViewHolder, position: Int) {
-        val nota : Nota = notaLista[position]
+        val nota: Nota = notaLista[position]
         holder.bind(nota)
     }
 
-    interface ItemClickListener
-    {
+    interface ItemClickListener {
         fun onItemClickListener(noteItem: Nota)
     }
 

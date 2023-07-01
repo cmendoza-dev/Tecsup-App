@@ -54,6 +54,16 @@
         <item>Gestión y Mantenimiento de Maquinaria Pesada</item>
     </string-array>
 
+    <string-array name="noticias">
+        <item>business</item>
+        <item>entertainment</item>
+        <item>general</item>
+        <item>health</item>
+        <item>science</item>
+        <item>sports</item>
+        <item>technology</item>
+    </string-array>
+
     <string-array name="anhos">
         <item>2023-I</item>
         <item>2023-II</item>
@@ -82,7 +92,6 @@
     <string name="contactanos">Contáctanos</string>
 
 
-
     <string name="ajustes">Ajustes</string>
     <string name="llamar">Llamar</string>
     <string name="mensaje">Mensaje</string>
@@ -100,12 +109,12 @@
         <item>A: 30% T + 70% L</item>
         <item>B: 40% T + 60% L</item>
     </string-array>
-    <string  name="prom">Prom: - - - -</string >
-    <string  name="promedio">Promedio: </string >
-    <string  name="practicaOne">Práctica 1</string >
-    <string  name="practicaTwo">Práctica 2</string >
-    <string  name="practicaThree">Práctica 3</string >
-    <string  name="practicaFour">Práctica 4</string >
+    <string name="prom">Prom: - - - -</string>
+    <string name="promedio">Promedio: </string>
+    <string name="practicaOne">Práctica 1</string>
+    <string name="practicaTwo">Práctica 2</string>
+    <string name="practicaThree">Práctica 3</string>
+    <string name="practicaFour">Práctica 4</string>
     <string name="action_search">Buscar</string>
     <string name="libreria">Librería</string>
 
